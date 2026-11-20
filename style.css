@@ -1,0 +1,627 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #faf9f6;
+    color: #252b29;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #174c43;
+    color: #174c43;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.logo strong {
+    color: #174c43;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.navbar a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #c18c46;
+}
+
+.header-btn {
+    background: #174c43;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.header-btn:hover {
+    background: #c18c46;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 570px;
+    padding: 100px 7% 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 65px;
+    background:
+        linear-gradient(rgba(0,0,0,0.48),
+        rgba(0,0,0,0.48)),
+        url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1800")
+        center/cover no-repeat;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-label {
+    color: #e6bd7b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #e6bd7b;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #eeeeee;
+    margin-bottom: 28px;
+    max-width: 500px;
+}
+
+.primary-btn {
+    display: inline-block;
+    background: #c18c46;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: #174c43;
+}
+
+
+/* SEARCH SECTION */
+
+.hero-search {
+    background: white;
+    color: #252b29;
+    padding: 22px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    align-items: end;
+    gap: 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.search-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-field label {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.search-field input,
+.search-field select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+    background: white;
+    font-size: 13px;
+}
+
+.search-field input:focus,
+.search-field select:focus {
+    border-color: #174c43;
+}
+
+.search-btn {
+    background: #174c43;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background: #c18c46;
+}
+
+
+/* COMMON SECTION */
+
+.section {
+    padding: 85px 7%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 35px;
+}
+
+.small-heading {
+    color: #c18c46;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: #777777;
+    font-size: 14px;
+}
+
+.view-link {
+    color: #174c43;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.view-link:hover {
+    color: #c18c46;
+}
+
+
+/* CARD GRID */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* DESTINATION CARDS */
+
+.destination-card {
+    position: relative;
+    height: 380px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.destination-card img {
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.destination-card:hover img {
+    transform: scale(1.08);
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 22px;
+    color: white;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+}
+
+.card-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.card-info p {
+    font-size: 13px;
+    margin-bottom: 12px;
+    color: #eeeeee;
+}
+
+.card-info span {
+    font-size: 12px;
+    color: #e6bd7b;
+    font-weight: 700;
+}
+
+
+/* HOTEL SECTION */
+
+.hotel-section {
+    background: #f0f3ef;
+}
+
+.hotel-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.hotel-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.hotel-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.hotel-info {
+    padding: 22px;
+}
+
+.rating {
+    color: #d69b36;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.hotel-info h3,
+.restaurant-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.hotel-info p,
+.restaurant-info p {
+    color: #777777;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.price {
+    margin: 18px 0;
+}
+
+.price strong {
+    font-size: 20px;
+    color: #174c43;
+}
+
+.price span {
+    font-size: 13px;
+    color: #888888;
+}
+
+.details-btn {
+    display: block;
+    text-align: center;
+    background: #174c43;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.details-btn:hover {
+    background: #c18c46;
+}
+
+
+/* RESTAURANT SECTION */
+
+.restaurant-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-7px);
+}
+
+.restaurant-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.restaurant-info {
+    padding: 22px;
+}
+
+.food-type {
+    display: inline-block;
+    background: #edf3ef;
+    color: #174c43;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #153d36;
+    color: white;
+    padding: 65px 7% 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 45px;
+}
+
+.footer-brand h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.footer-brand p {
+    max-width: 350px;
+    color: #c9d5d1;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-links h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #c9d5d1;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #e6bd7b;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: #c9d5d1;
+    font-size: 12px;
+}
+
+
+/* TABLET RESPONSIVENESS */
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 18px 4%;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero-search {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section {
+        padding: 65px 5%;
+    }
+
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 18px 4%;
+    }
+
+    .navbar {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 18px;
+        white-space: nowrap;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 75px 5% 35px;
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-search {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+    .section {
+        padding: 55px 5%;
+    }
+
+    .section-heading {
+        align-items: start;
+        gap: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .section-heading p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .view-link {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .destination-card {
+        height: 330px;
+    }
+
+    .hotel-card img,
+    .restaurant-card img {
+        height: 220px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .copyright {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
